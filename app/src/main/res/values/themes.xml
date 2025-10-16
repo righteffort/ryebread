@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--
+    Base application theme.
+    Using a Material 3 DayNight theme with no action bar is a good
+    starting point for a modern, media-centric app that works across devices.
+    -->
+    <style name="Theme.RyeBread" parent="Theme.Material3.Dark.NoActionBar" />
+</resources>
