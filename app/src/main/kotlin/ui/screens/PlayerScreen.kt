@@ -2,6 +2,7 @@ package org.righteffort.ryebread.ui.screens
 
 import android.view.ViewGroup.LayoutParams.MATCH_PARENT
 import android.widget.FrameLayout
+import androidx.activity.compose.BackHandler
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.remember
@@ -17,8 +18,16 @@ import androidx.media3.ui.PlayerView
 import org.righteffort.ryebread.MainActivity
 
 @Composable
-fun PlayerScreen(streamUrl: String) {
+fun PlayerScreen(
+    streamUrl: String,
+    onBackPressed: () -> Unit
+) {
     val context = LocalContext.current
+
+    // Handle back button press
+    BackHandler {
+        onBackPressed()
+    }
 
     // Create and remember the ExoPlayer instance
     val exoPlayer = remember {

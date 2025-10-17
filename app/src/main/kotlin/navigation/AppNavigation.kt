@@ -39,7 +39,10 @@ fun AppNavigation() {
         ) { backStackEntry ->
             val encodedUrl = backStackEntry.arguments?.getString("streamUrl") ?: ""
             val streamUrl = URLDecoder.decode(encodedUrl, StandardCharsets.UTF_8.toString())
-            PlayerScreen(streamUrl = streamUrl)
+            PlayerScreen(
+                streamUrl = streamUrl,
+                onBackPressed = { navController.popBackStack() }
+            )
         }
     }
 }
