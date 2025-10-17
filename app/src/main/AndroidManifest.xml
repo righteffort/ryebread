@@ -13,7 +13,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
-        android:theme="@style/Theme.RyeBread">
+        android:theme="@android:style/Theme.Material.NoActionBar">
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -27,7 +27,7 @@
             android:name=".PlayerActivity"
             android:exported="false"
             android:launchMode="singleTop"
-            android:theme="@style/Theme.RyeBread.Fullscreen"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
             android:screenOrientation="landscape" />
     </application>
 </manifest>

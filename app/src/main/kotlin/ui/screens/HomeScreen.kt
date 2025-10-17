@@ -56,7 +56,7 @@ fun HomeScreen(onPlayUrl: (String) -> Unit) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
-            text = "Modern M3U8 Player",
+            text = "Rye Bread",
             style = MaterialTheme.typography.headlineMedium,
             textAlign = TextAlign.Center
         )
